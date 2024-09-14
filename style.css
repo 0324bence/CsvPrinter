@@ -1,11 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-print-color-adjust: exact;
+}
+
+#controls {
+    padding-left: 25mm;
+    padding-right: 25mm;
+}
+
 #output {
-    width: 21cm;
-    height: 29.7cm;
-    padding: 30mm 45mm 30mm 45mm;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: 25mm 25mm 25mm 25mm;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
     /* change the margins as you want them to be. */
 }
 
 /*every second row gray*/
-#output table tr:nth-child(2n) {
-    background-color: #f0f0f0;
+#output table tr:nth-child(odd) {
+    background-color: #f0f0f0 !important;
+}
+
+#output table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col1 {
+    text-align: left;
+    width: 50%;
+}
+
+.col2 {
+    text-align: center;
+}
+
+.col3 {
+    text-align: right;
+    width: 50%;
+}
+
+.col1,
+.col3 {
+    font-weight: bold;
+}
+
+td {
+    padding: 5px;
+}
+
+input,
+button {
+    font-size: 1.1rem;
+    padding: 5px;
+    margin: 5px;
+}
+
+@media print {
+    body {
+        visibility: hidden;
+    }
+    #output {
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100vw;
+    }
 }
