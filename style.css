@@ -1,0 +1,11 @@
+#output {
+    width: 21cm;
+    height: 29.7cm;
+    padding: 30mm 45mm 30mm 45mm;
+    /* change the margins as you want them to be. */
+}
+
+/*every second row gray*/
+#output table tr:nth-child(2n) {
+    background-color: #f0f0f0;
+}
