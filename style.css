@@ -13,7 +13,7 @@
 #output {
     min-width: 100%;
     min-height: 100vh;
-    padding: 25mm 25mm 25mm 25mm;
+    padding: 0 15mm 0 15mm;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
