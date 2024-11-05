@@ -2,6 +2,7 @@ const input = document.querySelector("input");
 const button = document.querySelector("#print-button");
 const swap = document.querySelector("#swap-button");
 const output = document.querySelector("#output");
+const counter = document.querySelector("#num");
 
 let data = [];
 
@@ -59,6 +60,7 @@ function display(reverse) {
         row.appendChild(col3);
         table.appendChild(row);
     }
+    counter.innerHTML = data.length;
     output.innerHTML = "";
     output.appendChild(table);
 }
