@@ -43,13 +43,19 @@ span {
 #output table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.col0 {
+    text-align: center;
+    width: 10%;
+    font-size: 1rem;
 }
 
 .col1 {
     text-align: left;
-    width: 50%;
+    width: 45%;
 }
 
 .col2 {
@@ -58,7 +64,7 @@ span {
 
 .col3 {
     text-align: right;
-    width: 50%;
+    width: 45%;
 }
 
 .col1,
